@@ -5,7 +5,8 @@
 但是需要使用管理员权限来运行<br>
 原来使用vbs写的面板已经没办法使用了<br>
 自学了几天Go,搞出来一个满足自己需求的托盘程序,有需要的欢迎Fork<br>
-
+右键菜单<br>
 ![image](https://github.com/Amaury-GitHub/ClashLite/blob/main/README_IMG/IMG1.png)<br>
+左键通知<br>
 ![image](https://github.com/Amaury-GitHub/ClashLite/blob/main/README_IMG/IMG2.png)<br>
 
