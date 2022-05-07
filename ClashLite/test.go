@@ -384,6 +384,22 @@ var IcoData []byte = []byte{
 	0xff, 0xff,
 }
 
+func GetLocalVersion() {
+	//读取Clash本地版本
+	Command := exec.Command("cmd", "/c", "clash-windows-amd64 -v")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	Output, _ := Command.Output()
+	LocalVersion = string(Output)[6:16]
+}
+func GetRemoteVersion() {
+	//获取在线Clash版本
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadString('https://github.com/Dreamacro/clash/releases/tag/premium')")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	Output, err := Command.Output()
+	if err == nil {
+		RemoteVersion = string(Output)[strings.Index(string(Output), "Premium")+8 : strings.Index(string(Output), "Dreamacro")-4]
+	}
+}
 func GetOnlineLoop() {
 	//更新Country.mmdb
 	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/Hackl0us/GeoIP2-CN@release/Country.mmdb','Country.mmdb.temp')")
@@ -393,12 +409,7 @@ func GetOnlineLoop() {
 		os.Rename("Country.mmdb.temp", "Country.mmdb")
 	}
 	//获取在线Clash版本
-	Command = exec.Command("powershell", "(New-Object Net.WebClient).DownloadString('https://github.com/Dreamacro/clash/releases/tag/premium')")
-	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
-	Output, err := Command.Output()
-	if err == nil {
-		RemoteVersion = string(Output)[strings.Index(string(Output), "Premium")+8 : strings.Index(string(Output), "Dreamacro")-4]
-	}
+	GetRemoteVersion()
 	//显示通知
 	ShowMessage()
 	//1h循环
@@ -406,12 +417,9 @@ func GetOnlineLoop() {
 }
 func StartClash() {
 	//读取Clash本地版本
-	Command := exec.Command("cmd", "/c", "clash-windows-amd64 -v")
-	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
-	Output, _ := Command.Output()
-	LocalVersion = string(Output)[6:16]
+	GetLocalVersion()
 	//启动Clash
-	Command = exec.Command("cmd", "/c", "clash-windows-amd64 -d .")
+	Command := exec.Command("cmd", "/c", "clash-windows-amd64 -d .")
 	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
 	Command.Start()
 }
@@ -455,10 +463,7 @@ func init() {
 		os.Exit(1)
 	}
 	//读取Clash本地版本
-	Command := exec.Command("cmd.exe", "/c", "clash-windows-amd64 -v")
-	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
-	Output, _ := Command.Output()
-	LocalVersion = string(Output)[6:16]
+	GetLocalVersion()
 	//创建ICO
 	ioutil.WriteFile("icon.ico", IcoData, 0644)
 }
@@ -539,13 +544,7 @@ func main() {
 	//升级Clash
 	Update.Triggered().Attach(func() {
 		//获取在线Clash版本
-		Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadString('https://github.com/Dreamacro/clash/releases/tag/premium')")
-		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
-		Output, err := Command.Output()
-		if err != nil {
-			return
-		}
-		RemoteVersion = string(Output)[strings.Index(string(Output), "Premium")+8 : strings.Index(string(Output), "Dreamacro")-4]
+		GetRemoteVersion()
 		//如果版本一样不更新
 		if RemoteVersion == LocalVersion {
 			return
@@ -553,9 +552,9 @@ func main() {
 		//生成最新版本的下载地址
 		DownloadLink := "(New-Object Net.WebClient).DownloadFile('https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-amd64-" + RemoteVersion + ".zip','clash.zip')"
 		//下载压缩包
-		Command = exec.Command("powershell", DownloadLink)
+		Command := exec.Command("powershell", DownloadLink)
 		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
-		_, err = Command.Output()
+		_, err := Command.Output()
 		if err != nil {
 			return
 		}
