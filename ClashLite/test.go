@@ -402,7 +402,7 @@ func GetRemoteVersion() {
 }
 func GetOnlineLoop() {
 	//更新Country.mmdb
-	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/Hackl0us/GeoIP2-CN@release/Country.mmdb','Country.mmdb.temp')")
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country-only-cn-private.mmdb','Country.mmdb.temp')")
 	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
 	_, err := Command.Output()
 	if err == nil {
@@ -496,8 +496,6 @@ func main() {
 	blank4.SetText("-")
 	blank5 := walk.NewAction()
 	blank5.SetText("-")
-	blank6 := walk.NewAction()
-	blank6.SetText("-")
 	Start := walk.NewAction()
 	Start.SetText("启动Clash")
 	Stop := walk.NewAction()
@@ -508,8 +506,6 @@ func main() {
 	Razord.SetText("打开Razord")
 	Yacd := walk.NewAction()
 	Yacd.SetText("打开Yacd")
-	EnableLoopback := walk.NewAction()
-	EnableLoopback.SetText("打开EnableLoopback")
 	Exit := walk.NewAction()
 	Exit.SetText("Exit")
 	NotifyIcon.ContextMenu().Actions().Add(Start)
@@ -522,8 +518,6 @@ func main() {
 	NotifyIcon.ContextMenu().Actions().Add(blank4)
 	NotifyIcon.ContextMenu().Actions().Add(Yacd)
 	NotifyIcon.ContextMenu().Actions().Add(blank5)
-	NotifyIcon.ContextMenu().Actions().Add(EnableLoopback)
-	NotifyIcon.ContextMenu().Actions().Add(blank6)
 	NotifyIcon.ContextMenu().Actions().Add(Exit)
 	//启动Clash
 	Start.Triggered().Attach(func() {
@@ -608,12 +602,6 @@ func main() {
 	//打开Yacd
 	Yacd.Triggered().Attach(func() {
 		Command := exec.Command("cmd", "/c", "start", "http://localhost:9090/ui/yacd")
-		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
-		Command.Start()
-	})
-	//打开EnableLoopback
-	EnableLoopback.Triggered().Attach(func() {
-		Command := exec.Command("cmd", "/c", "start", "EnableLoopback.exe")
 		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
 		Command.Start()
 	})
