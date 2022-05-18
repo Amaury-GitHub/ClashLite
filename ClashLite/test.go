@@ -555,9 +555,9 @@ func main() {
 		//停止Clash
 		StopClash()
 		//删除文件
-		os.Remove("clash-windows-amd64.exe")
-		//获取当前目录
-		DestinationPath, _ := os.Getwd()
+		Command = exec.Command("cmd", "/c", "del /f /q", "clash-windows-amd64.exe")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
 		//打开压缩包
 		Archive, err := zip.OpenReader("clash.zip")
 		if err != nil {
@@ -587,7 +587,9 @@ func main() {
 		DestinationFileOpen.Close()
 		Archive.Close()
 		//删除压缩包
-		os.Remove("clash.zip")
+		Command = exec.Command("cmd", "/c", "del /f /q", "clash.zip")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
 		//启动Clash
 		StartClash()
 		//显示通知
