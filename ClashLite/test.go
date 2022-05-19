@@ -466,7 +466,10 @@ func main() {
 	//定义托盘图标文字
 	MainWindow, _ = walk.NewMainWindow()
 	Icon, _ = walk.Resources.Icon("icon.ico")
-	os.Remove("icon.ico")
+	//删除图标
+	Command := exec.Command("cmd", "/c", "del /f /q", "icon.ico")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	Command.Run()
 	NotifyIcon, _ = walk.NewNotifyIcon(MainWindow)
 	defer NotifyIcon.Dispose()
 	NotifyIcon.SetIcon(Icon)
