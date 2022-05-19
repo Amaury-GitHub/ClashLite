@@ -1,12 +1,9 @@
 package main
 
 import (
-	"archive/zip"
-	"io"
 	"io/ioutil"
 	"os"
 	"os/exec"
-	"path/filepath"
 	"strings"
 	"syscall"
 	"time"
@@ -410,8 +407,6 @@ func GetOnlineLoop() {
 	}
 	//获取在线Clash版本
 	GetRemoteVersion()
-	//显示通知
-	ShowMessage()
 	//1h循环
 	time.AfterFunc(1*time.Hour, GetOnlineLoop)
 }
@@ -541,6 +536,8 @@ func main() {
 		GetRemoteVersion()
 		//如果版本一样不更新
 		if RemoteVersion == LocalVersion {
+			//显示通知
+			ShowMessage()
 			return
 		}
 		//生成最新版本的下载地址
@@ -554,38 +551,10 @@ func main() {
 		}
 		//停止Clash
 		StopClash()
-		//删除文件
-		Command = exec.Command("cmd", "/c", "del /f /q", "clash-windows-amd64.exe")
+		//解压缩文件
+		Command = exec.Command("powershell", "Expand-Archive -Force clash.zip ./")
 		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
 		Command.Run()
-		//打开压缩包
-		Archive, err := zip.OpenReader("clash.zip")
-		if err != nil {
-			return
-		}
-		defer Archive.Close()
-		//解压缩
-		DestinationFile := filepath.Join(DestinationPath, Archive.File[0].Name)
-		ArchiveFileOpen, err := Archive.File[0].Open()
-		if err != nil {
-			ArchiveFileOpen.Close()
-			return
-		}
-		DestinationFileOpen, err := os.OpenFile(DestinationFile, os.O_CREATE|os.O_RDWR|os.O_TRUNC, Archive.File[0].Mode())
-		if err != nil {
-			ArchiveFileOpen.Close()
-			DestinationFileOpen.Close()
-			return
-		}
-		_, err = io.Copy(DestinationFileOpen, ArchiveFileOpen)
-		if err != nil {
-			ArchiveFileOpen.Close()
-			DestinationFileOpen.Close()
-			return
-		}
-		ArchiveFileOpen.Close()
-		DestinationFileOpen.Close()
-		Archive.Close()
 		//删除压缩包
 		Command = exec.Command("cmd", "/c", "del /f /q", "clash.zip")
 		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
@@ -616,6 +585,8 @@ func main() {
 	})
 	//循环
 	go GetOnlineLoop()
+	//显示通知
+	ShowMessage()
 	//主程序运行
 	MainWindow.Run()
 }
