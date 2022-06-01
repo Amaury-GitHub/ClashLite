@@ -2,6 +2,7 @@ package main
 
 import (
 	"io/ioutil"
+	"net/http"
 	"os"
 	"os/exec"
 	"strings"
@@ -16,6 +17,7 @@ var LocalVersion string
 var RemoteVersion string
 var ClashStatus string
 var TunStatus string
+var UpdateTime string
 
 var MainWindow *walk.MainWindow
 var Icon *walk.Icon
@@ -397,18 +399,196 @@ func GetRemoteVersion() {
 		RemoteVersion = string(Output)[strings.Index(string(Output), "Premium")+8 : strings.Index(string(Output), "Dreamacro")-4]
 	}
 }
-func GetOnlineLoop() {
-	//更新Country.mmdb
-	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country-only-cn-private.mmdb','Country.mmdb.temp')")
+func UpdateGeoIP2() {
+	//GeoIP2
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb','Country.mmdb.temp')")
 	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
 	_, err := Command.Output()
 	if err == nil {
-		os.Rename("Country.mmdb.temp", "Country.mmdb")
+		Command = exec.Command("cmd", "/c", "move /y Country.mmdb.temp Country.mmdb")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
 	}
-	//获取在线Clash版本
-	GetRemoteVersion()
+}
+func UpdateDirect() {
+	//direct
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt','direct.txt.temp')")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	_, err := Command.Output()
+	if err == nil {
+		Command = exec.Command("cmd", "/c", "move /y direct.txt.temp rule_providers/direct.txt")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
+	}
+}
+func UpdateProxy() {
+	//proxy
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt','proxy.txt.temp')")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	_, err := Command.Output()
+	if err == nil {
+		Command = exec.Command("cmd", "/c", "move /y proxy.txt.temp rule_providers/proxy.txt")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
+	}
+}
+func UpdateReject() {
+	//reject
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt','reject.txt.temp')")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	_, err := Command.Output()
+	if err == nil {
+		Command = exec.Command("cmd", "/c", "move /y reject.txt.temp rule_providers/reject.txt")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
+	}
+}
+func UpdatePrivate() {
+	//private
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt','private.txt.temp')")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	_, err := Command.Output()
+	if err == nil {
+		Command = exec.Command("cmd", "/c", "move /y private.txt.temp rule_providers/private.txt")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
+	}
+}
+func UpdateApple() {
+	//apple
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt','apple.txt.temp')")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	_, err := Command.Output()
+	if err == nil {
+		Command = exec.Command("cmd", "/c", "move /y apple.txt.temp rule_providers/apple.txt")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
+	}
+}
+func UpdateIcloud() {
+	//icloud
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt','icloud.txt.temp')")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	_, err := Command.Output()
+	if err == nil {
+		Command = exec.Command("cmd", "/c", "move /y icloud.txt.temp rule_providers/icloud.txt")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
+	}
+}
+func UpdateGoogle() {
+	//google
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt','google.txt.temp')")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	_, err := Command.Output()
+	if err == nil {
+		Command = exec.Command("cmd", "/c", "move /y google.txt.temp rule_providers/google.txt")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
+	}
+}
+func UpdateGfw() {
+	//gfw
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt','gfw.txt.temp')")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	_, err := Command.Output()
+	if err == nil {
+		Command = exec.Command("cmd", "/c", "move /y gfw.txt.temp rule_providers/gfw.txt")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
+	}
+}
+func UpdateGreatfire() {
+	//greatfire
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/greatfire.txt','greatfire.txt.temp')")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	_, err := Command.Output()
+	if err == nil {
+		Command = exec.Command("cmd", "/c", "move /y greatfire.txt.temp rule_providers/greatfire.txt")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
+	}
+}
+func UpdateTldnotcn() {
+	//tld-not-cn
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt','tld-not-cn.txt.temp')")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	_, err := Command.Output()
+	if err == nil {
+		Command = exec.Command("cmd", "/c", "move /y tld-not-cn.txt.temp rule_providers/tld-not-cn.txt")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
+	}
+}
+func UpdateTelegramcidr() {
+	//telegramcidr
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt','telegramcidr.txt.temp')")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	_, err := Command.Output()
+	if err == nil {
+		Command = exec.Command("cmd", "/c", "move /y telegramcidr.txt.temp rule_providers/telegramcidr.txt")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
+	}
+}
+func UpdateLancidr() {
+	//lancidr
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt','lancidr.txt.temp')")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	_, err := Command.Output()
+	if err == nil {
+		Command = exec.Command("cmd", "/c", "move /y lancidr.txt.temp rule_providers/lancidr.txt")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
+	}
+}
+func UpdateCncidr() {
+	//cncidr
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt','cncidr.txt.temp')")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	_, err := Command.Output()
+	if err == nil {
+		Command = exec.Command("cmd", "/c", "move /y cncidr.txt.temp rule_providers/cncidr.txt")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
+	}
+}
+func UpdateApplications() {
+	//applications
+	Command := exec.Command("powershell", "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt','applications.txt.temp')")
+	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+	_, err := Command.Output()
+	if err == nil {
+		Command = exec.Command("cmd", "/c", "move /y applications.txt.temp rule_providers/applications.txt")
+		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
+		Command.Run()
+	}
+}
+func UpdateRule() {
+	Now := time.Now()
+	UpdateTime = Now.Format("2006-01-02 15:04:05")
+	go UpdateGeoIP2()
+	go UpdateDirect()
+	go UpdateProxy()
+	go UpdateReject()
+	go UpdatePrivate()
+	go UpdateApple()
+	go UpdateIcloud()
+	go UpdateGoogle()
+	go UpdateGfw()
+	go UpdateGreatfire()
+	go UpdateTldnotcn()
+	go UpdateTelegramcidr()
+	go UpdateLancidr()
+	go UpdateCncidr()
+	go UpdateApplications()
+	go GetRemoteVersion()
+}
+func UpdateRuleLoop() {
+	//更新
+	go UpdateRule()
 	//1h循环
-	time.AfterFunc(1*time.Hour, GetOnlineLoop)
+	time.AfterFunc(1*time.Hour, UpdateRuleLoop)
 }
 func StartClash() {
 	//读取Clash本地版本
@@ -424,7 +604,7 @@ func StopClash() {
 	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
 	Command.Run()
 	//停止Clash
-	Command = exec.Command("taskkill", "/f", "/im", "clash-windows-amd64.exe")
+	Command = exec.Command("cmd", "/c", "taskkill /f /im clash-windows-amd64.exe")
 	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
 	Command.Run()
 }
@@ -448,7 +628,12 @@ func ShowMessage() {
 		TunStatus = "未运行"
 	}
 	//显示通知
-	NotifyIcon.ShowMessage("ClashLite", "Clash: "+ClashStatus+"\r\n"+"Tun: "+TunStatus+"\r\n"+"本地版本: "+LocalVersion+"\r\n"+"在线版本: "+RemoteVersion)
+	NotifyIcon.ShowMessage("Clash: "+ClashStatus+" / "+"Tun: "+TunStatus, "本地版本: "+LocalVersion+"\r\n"+"在线版本: "+RemoteVersion+"\r\n"+"更新时间: "+UpdateTime)
+}
+func WebServer() {
+	//启动Web Server
+	http.Handle("/", http.FileServer(http.Dir("./")))
+	http.ListenAndServe(":8080", nil)
 }
 func init() {
 	//阻止多次启动
@@ -467,7 +652,7 @@ func main() {
 	MainWindow, _ = walk.NewMainWindow()
 	Icon, _ = walk.Resources.Icon("icon.ico")
 	//删除图标
-	Command := exec.Command("cmd", "/c", "del /f /q", "icon.ico")
+	Command := exec.Command("cmd", "/c", "del /f /q icon.ico")
 	Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
 	Command.Run()
 	NotifyIcon, _ = walk.NewNotifyIcon(MainWindow)
@@ -494,6 +679,8 @@ func main() {
 	blank4.SetText("-")
 	blank5 := walk.NewAction()
 	blank5.SetText("-")
+	blank6 := walk.NewAction()
+	blank6.SetText("-")
 	Start := walk.NewAction()
 	Start.SetText("启动Clash")
 	Stop := walk.NewAction()
@@ -501,9 +688,11 @@ func main() {
 	Update := walk.NewAction()
 	Update.SetText("升级Clash")
 	Razord := walk.NewAction()
-	Razord.SetText("打开Razord")
+	Razord.SetText("打开Razord面板")
 	Yacd := walk.NewAction()
-	Yacd.SetText("打开Yacd")
+	Yacd.SetText("打开Yacd面板")
+	Renew := walk.NewAction()
+	Renew.SetText("手动更新规则")
 	Exit := walk.NewAction()
 	Exit.SetText("Exit")
 	NotifyIcon.ContextMenu().Actions().Add(Start)
@@ -516,6 +705,8 @@ func main() {
 	NotifyIcon.ContextMenu().Actions().Add(blank4)
 	NotifyIcon.ContextMenu().Actions().Add(Yacd)
 	NotifyIcon.ContextMenu().Actions().Add(blank5)
+	NotifyIcon.ContextMenu().Actions().Add(Renew)
+	NotifyIcon.ContextMenu().Actions().Add(blank6)
 	NotifyIcon.ContextMenu().Actions().Add(Exit)
 	//启动Clash
 	Start.Triggered().Attach(func() {
@@ -569,15 +760,19 @@ func main() {
 	})
 	//打开Razord
 	Razord.Triggered().Attach(func() {
-		Command := exec.Command("cmd", "/c", "start", "http://localhost:9090/ui/razord")
+		Command := exec.Command("cmd", "/c", "start", "http://clash.razord.top")
 		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
 		Command.Start()
 	})
 	//打开Yacd
 	Yacd.Triggered().Attach(func() {
-		Command := exec.Command("cmd", "/c", "start", "http://localhost:9090/ui/yacd")
+		Command := exec.Command("cmd", "/c", "start", "http://yacd.haishan.me")
 		Command.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
 		Command.Start()
+	})
+	//手动更新规则
+	Renew.Triggered().Attach(func() {
+		go UpdateRule()
 	})
 	//Exit
 	Exit.Triggered().Attach(func() {
@@ -586,10 +781,12 @@ func main() {
 		//退出主程序
 		walk.App().Exit(0)
 	})
-	//循环
-	go GetOnlineLoop()
 	//显示通知
 	ShowMessage()
+	//循环更新
+	go UpdateRuleLoop()
+	//启动WebServer
+	go WebServer()
 	//主程序运行
 	MainWindow.Run()
 }
