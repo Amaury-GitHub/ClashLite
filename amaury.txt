@@ -1,0 +1,45 @@
+payload:
+# DST-PORT
+  - DST-PORT,123
+# PROCESS-NAME
+  - PROCESS-NAME,OfficeClickToRun.exe
+  - PROCESS-NAME,Listary.exe
+  - PROCESS-NAME,Listary.Service.exe
+  - PROCESS-NAME,WeChat.exe
+  - PROCESS-NAME,SunloginClient.exe
+  - PROCESS-NAME,ToDesk.exe
+  - PROCESS-NAME,ToDesk_Service.exe
+# DOMAIN-SUFFIX
+  - DOMAIN-SUFFIX,amaury.eu.org
+  - DOMAIN-SUFFIX,clash.razord.top
+  - DOMAIN-SUFFIX,yacd.haishan.me
+  - DOMAIN-SUFFIX,cloudflare.com
+  - DOMAIN-SUFFIX,mo.fish
+  - DOMAIN-SUFFIX,msauth.net
+  - DOMAIN-SUFFIX,gfx.ms
+  - DOMAIN-SUFFIX,msecnd.net
+  - DOMAIN-SUFFIX,visualstudio.com
+  - DOMAIN-SUFFIX,trafficmanager.net
+  - DOMAIN-SUFFIX,live.com
+  - DOMAIN-SUFFIX,apple.com
+  - DOMAIN-SUFFIX,cdn-apple.com
+  - DOMAIN-SUFFIX,apple.news
+  - DOMAIN-SUFFIX,windows.com
+  - DOMAIN-SUFFIX,microsoft.com
+  - DOMAIN-SUFFIX,s-microsoft.com
+  - DOMAIN-SUFFIX,msn.com
+  - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,akamaized.net
+  - DOMAIN-SUFFIX,nelreports.net
+  - DOMAIN-SUFFIX,skype.com
+  - DOMAIN-SUFFIX,office.com
+  - DOMAIN-SUFFIX,office.net
+  - DOMAIN-SUFFIX,windowsupdate.com
+  - DOMAIN-SUFFIX,msftauth.net
+  - DOMAIN-SUFFIX,aspnetcdn.com
+  - DOMAIN-SUFFIX,azureedge.net
+  - DOMAIN-SUFFIX,yahoo.com
+  - DOMAIN-SUFFIX,synology.com
+  - DOMAIN-SUFFIX,printf520.com
+  - DOMAIN-SUFFIX,0daydown.com
+  
