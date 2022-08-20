@@ -15,6 +15,8 @@ payload:
   - PROCESS-NAME,ToDesk_Service.exe
 # DOMAIN-SUFFIX
   - DOMAIN-SUFFIX,amaury.eu.org
+  - DOMAIN-SUFFIX,clash.razord.top
+  - DOMAIN-SUFFIX,yacd.haishan.me
   - DOMAIN-SUFFIX,mo.fish
   - DOMAIN-SUFFIX,msauth.net
   - DOMAIN-SUFFIX,gfx.ms
