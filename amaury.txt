@@ -17,7 +17,6 @@ payload:
   - DOMAIN-SUFFIX,amaury.eu.org
   - DOMAIN-SUFFIX,yacd.haishan.me
   - DOMAIN-SUFFIX,mo.fish
-  - DOMAIN-SUFFIX,laosiji.com
   - DOMAIN-SUFFIX,msauth.net
   - DOMAIN-SUFFIX,gfx.ms
   - DOMAIN-SUFFIX,msecnd.net
