@@ -43,4 +43,6 @@ payload:
   - DOMAIN-SUFFIX,synology.com
   - DOMAIN-SUFFIX,printf520.com
   - DOMAIN-SUFFIX,0daydown.com
+  - DOMAIN-SUFFIX,bingapis.com
+  - DOMAIN-SUFFIX,0daydown.com
   
