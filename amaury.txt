@@ -13,7 +13,7 @@ payload:
   - PROCESS-NAME,SunloginClient.exe
   - PROCESS-NAME,ToDesk.exe
   - PROCESS-NAME,ToDesk_Service.exe
-# DOMAIN-SUFFIX MicroSoft
+# DOMAIN-SUFFIX MicroSoft & Apple
   - DOMAIN-SUFFIX,msauth.net
   - DOMAIN-SUFFIX,msedge.net
   - DOMAIN-SUFFIX,gfx.ms
@@ -37,7 +37,6 @@ payload:
   - DOMAIN-SUFFIX,azureedge.net
   - DOMAIN-SUFFIX,yahoo.com
   - DOMAIN-SUFFIX,bingapis.com
-# DOMAIN-SUFFIX Apple
   - DOMAIN-SUFFIX,apple.com
   - DOMAIN-SUFFIX,cdn-apple.com
   - DOMAIN-SUFFIX,apple.news
