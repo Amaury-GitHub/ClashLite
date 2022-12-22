@@ -35,6 +35,7 @@ payload:
   - DOMAIN-SUFFIX,aspnetcdn.com
   - DOMAIN-SUFFIX,azureedge.net
   - DOMAIN-SUFFIX,yahoo.com
+  - DOMAIN-SUFFIX,bingapis.com
 # DOMAIN-SUFFIX Apple
   - DOMAIN-SUFFIX,apple.com
   - DOMAIN-SUFFIX,cdn-apple.com
@@ -45,7 +46,6 @@ payload:
   - DOMAIN-SUFFIX,synology.com
   - DOMAIN-SUFFIX,printf520.com
   - DOMAIN-SUFFIX,0daydown.com
-  - DOMAIN-SUFFIX,bingapis.com
   - DOMAIN-SUFFIX,wechat.com
   - DOMAIN-SUFFIX,ifbikl.xyz
   - DOMAIN-SUFFIX,lengmen.org
