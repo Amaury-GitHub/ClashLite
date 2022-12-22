@@ -13,24 +13,19 @@ payload:
   - PROCESS-NAME,SunloginClient.exe
   - PROCESS-NAME,ToDesk.exe
   - PROCESS-NAME,ToDesk_Service.exe
-# DOMAIN-SUFFIX
-  - DOMAIN-SUFFIX,amaury.eu.org
-  - DOMAIN-SUFFIX,mo.fish
+# DOMAIN-SUFFIX MicroSoft
   - DOMAIN-SUFFIX,msauth.net
   - DOMAIN-SUFFIX,gfx.ms
   - DOMAIN-SUFFIX,msecnd.net
   - DOMAIN-SUFFIX,visualstudio.com
-  - DOMAIN-SUFFIX,trafficmanager.net
   - DOMAIN-SUFFIX,live.com
-  - DOMAIN-SUFFIX,apple.com
-  - DOMAIN-SUFFIX,cdn-apple.com
-  - DOMAIN-SUFFIX,apple.news
   - DOMAIN-SUFFIX,windows.com
   - DOMAIN-SUFFIX,microsoft.com
   - DOMAIN-SUFFIX,s-microsoft.com
   - DOMAIN-SUFFIX,msn.com
   - DOMAIN-SUFFIX,bing.com
   - DOMAIN-SUFFIX,akamaized.net
+  - DOMAIN-SUFFIX,trafficmanager.net
   - DOMAIN-SUFFIX,nelreports.net
   - DOMAIN-SUFFIX,skype.com
   - DOMAIN-SUFFIX,office.com
@@ -40,6 +35,13 @@ payload:
   - DOMAIN-SUFFIX,aspnetcdn.com
   - DOMAIN-SUFFIX,azureedge.net
   - DOMAIN-SUFFIX,yahoo.com
+# DOMAIN-SUFFIX Apple
+  - DOMAIN-SUFFIX,apple.com
+  - DOMAIN-SUFFIX,cdn-apple.com
+  - DOMAIN-SUFFIX,apple.news
+# DOMAIN-SUFFIX Other
+  - DOMAIN-SUFFIX,amaury.eu.org
+  - DOMAIN-SUFFIX,mo.fish
   - DOMAIN-SUFFIX,synology.com
   - DOMAIN-SUFFIX,printf520.com
   - DOMAIN-SUFFIX,0daydown.com
