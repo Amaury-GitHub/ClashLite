@@ -15,6 +15,7 @@ payload:
   - PROCESS-NAME,ToDesk_Service.exe
 # DOMAIN-SUFFIX MicroSoft
   - DOMAIN-SUFFIX,msauth.net
+  - DOMAIN-SUFFIX,msedge.net
   - DOMAIN-SUFFIX,gfx.ms
   - DOMAIN-SUFFIX,msecnd.net
   - DOMAIN-SUFFIX,visualstudio.com
