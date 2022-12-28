@@ -35,6 +35,7 @@ payload:
   - DOMAIN-SUFFIX,msftauth.net
   - DOMAIN-SUFFIX,aspnetcdn.com
   - DOMAIN-SUFFIX,azureedge.net
+  - DOMAIN-SUFFIX,azure.com
   - DOMAIN-SUFFIX,yahoo.com
   - DOMAIN-SUFFIX,bingapis.com
   - DOMAIN-SUFFIX,apple.com
