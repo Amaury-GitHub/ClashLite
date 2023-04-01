@@ -71,8 +71,7 @@ payload:
   - DOMAIN-SUFFIX,digicert.com
   - DOMAIN-SUFFIX,cloudflare.com
   - DOMAIN-SUFFIX,spot.im
-  - DOMAIN-SUFFIX,tbcache.us
-  - DOMAIN-SUFFIX,caldis.me
+  - DOMAIN-SUFFIX,ocsp-certum.com
   - DOMAIN-SUFFIX,cloudfront.net
 # IP-CIDR WeChat
   - DOMAIN-SUFFIX,wechat.com
