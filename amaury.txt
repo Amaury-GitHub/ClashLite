@@ -69,6 +69,7 @@ payload:
   - DOMAIN-SUFFIX,mitecdn.com
   - DOMAIN-SUFFIX,deepl.com
   - DOMAIN-SUFFIX,digicert.com
+  - DOMAIN-SUFFIX,cloudflare.com
 # IP-CIDR WeChat
   - DOMAIN-SUFFIX,wechat.com
   - IP-CIDR,101.32.104.0/21,no-resolve
