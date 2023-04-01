@@ -87,6 +87,7 @@ payload:
   - IP-CIDR,17.188.168.0/22,no-resolve
   - IP-CIDR,17.248.165.0/24,no-resolve
   - IP-CIDR,17.188.128.0/20,no-resolve
+  - IP-CIDR,17.188.180.0/22,no-resolve
 # IP-CIDR Akamai
   - IP-CIDR,172.224.23.0/24,no-resolve
 # IP-CIDR Siemens
