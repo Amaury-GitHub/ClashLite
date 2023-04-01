@@ -56,6 +56,7 @@ payload:
   - DOMAIN-SUFFIX,apple-cloudkit.com
   - DOMAIN-SUFFIX,apple-mapkit.com
   - DOMAIN-SUFFIX,xboxlive.com
+  - DOMAIN-SUFFIX,appcenter.ms
 # DOMAIN-SUFFIX Other
   - DOMAIN,safebrowsing.googleapis.com
   - DOMAIN-SUFFIX,amaury.eu.org
