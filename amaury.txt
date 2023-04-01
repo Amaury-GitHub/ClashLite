@@ -74,6 +74,7 @@ payload:
   - DOMAIN-SUFFIX,ocsp-certum.com
   - DOMAIN-SUFFIX,cloudfront.net
   - DOMAIN-SUFFIX,digitalcertvalidation.com
+  - DOMAIN-KEYWORD,95516.com
 # IP-CIDR WeChat
   - DOMAIN-SUFFIX,wechat.com
   - IP-CIDR,101.32.104.0/21,no-resolve
