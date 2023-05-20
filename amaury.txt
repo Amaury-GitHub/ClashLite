@@ -18,6 +18,7 @@ payload:
   - DOMAIN-SUFFIX,akamaized.net
   - DOMAIN-SUFFIX,azurefd.net
   - DOMAIN-SUFFIX,gfx.ms
+  - DOMAIN-SUFFIX,azure.com
 # DOMAIN-KEYWORD Siemens
   - DOMAIN-KEYWORD,siemens
 # DOMAIN-SUFFIX Other
