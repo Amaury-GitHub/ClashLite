@@ -3,37 +3,23 @@ payload:
   - DST-PORT,123
 # DOMAIN-SUFFIX Personal
   - DOMAIN-SUFFIX,amaury.eu.org
-# DOMAIN-KEYWORD Apple
-  - DOMAIN-KEYWORD,.apple
-  - DOMAIN-KEYWORD,apple.
-  - DOMAIN-KEYWORD,icloud.
-  - DOMAIN-KEYWORD,.icloud
-# DOMAIN-KEYWORD Microsoft
-  - DOMAIN-KEYWORD,microsoft.
-  - DOMAIN-KEYWORD,.microsoft
-  - DOMAIN-KEYWORD,windows.
-  - DOMAIN-KEYWORD,.windows
-  - DOMAIN-KEYWORD,live.
-  - DOMAIN-KEYWORD,.live
-  - DOMAIN-KEYWORD,bing.
-  - DOMAIN-KEYWORD,.bing
-  - DOMAIN-KEYWORD,skype.
-  - DOMAIN-KEYWORD,.skype
-  - DOMAIN-KEYWORD,office.
-  - DOMAIN-KEYWORD,.office
-  - DOMAIN-KEYWORD,sharepoint.
-  - DOMAIN-KEYWORD,.sharepoint
-  - DOMAIN-KEYWORD,xbox.
-  - DOMAIN-KEYWORD,.xbox
-  - DOMAIN-KEYWORD,nelreports.
-  - DOMAIN-KEYWORD,.nelreports
+# DOMAIN-SUFFIX Apple
+  - DOMAIN-SUFFIX,apple.com
+# DOMAIN-SUFFIX Microsoft
+  - DOMAIN-SUFFIX,microsoft.com
+  - DOMAIN-SUFFIX,windows.com
+  - DOMAIN-SUFFIX,live.com
+  - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,skype.com
+  - DOMAIN-SUFFIX,office.com
+  - DOMAIN-SUFFIX,sharepoint.com
+  - DOMAIN-SUFFIX,xbox.com
+  - DOMAIN-SUFFIX,nelreports.com
 # DOMAIN-KEYWORD Siemens
-  - DOMAIN-KEYWORD,siemens.
-  - DOMAIN-KEYWORD,.siemens
-# DOMAIN-KEYWORD Other
-  - DOMAIN-KEYWORD,sentry.io
-  - DOMAIN-KEYWORD,cloudflare.
-  - DOMAIN-KEYWORD,.cloudflare
+  - DOMAIN-KEYWORD,siemens
+# DOMAIN-SUFFIX Other
+  - DOMAIN-SUFFIX,sentry.io
+  - DOMAIN-SUFFIX,cloudflare.com
 # IP-CIDR WeChat
   - IP-CIDR,43.154.192.0/18,no-resolve
   - IP-CIDR,43.156.192.0/18,no-resolve
