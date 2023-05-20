@@ -29,6 +29,7 @@ payload:
   - DOMAIN-SUFFIX,msauth.net
   - DOMAIN-SUFFIX,msftauth.net
   - DOMAIN-SUFFIX,microsoftonline.com
+  - DOMAIN-SUFFIX,appcenter.ms
 # DOMAIN-KEYWORD Siemens
   - DOMAIN-KEYWORD,siemens
 # DOMAIN-SUFFIX Other
