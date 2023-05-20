@@ -12,11 +12,13 @@ payload:
   - DOMAIN-SUFFIX,bing.com
   - DOMAIN-SUFFIX,skype.com
   - DOMAIN-SUFFIX,office.com
+  - DOMAIN-SUFFIX,office.net
   - DOMAIN-SUFFIX,sharepoint.com
   - DOMAIN-SUFFIX,xbox.com
   - DOMAIN-SUFFIX,nelreports.com
   - DOMAIN-SUFFIX,akamaized.net
   - DOMAIN-SUFFIX,azurefd.net
+  - DOMAIN-SUFFIX,azureedge.net
   - DOMAIN-SUFFIX,gfx.ms
   - DOMAIN-SUFFIX,azure.com
   - DOMAIN-SUFFIX,msauth.net
