@@ -8,6 +8,7 @@ payload:
 # DOMAIN-SUFFIX Microsoft
   - DOMAIN-SUFFIX,microsoft.com
   - DOMAIN-SUFFIX,microsoft.net
+  - DOMAIN-SUFFIX,s-microsoft.com
   - DOMAIN-SUFFIX,windows.com
   - DOMAIN-SUFFIX,windowsupdate.com
   - DOMAIN-SUFFIX,live.com
@@ -17,6 +18,7 @@ payload:
   - DOMAIN-SUFFIX,office.net
   - DOMAIN-SUFFIX,sharepoint.com
   - DOMAIN-SUFFIX,xboxservices.com
+  - DOMAIN-SUFFIX,xboxlive.com
   - DOMAIN-SUFFIX,nelreports.com
   - DOMAIN-SUFFIX,akamaized.net
   - DOMAIN-SUFFIX,azurefd.net
