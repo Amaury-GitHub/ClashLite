@@ -28,6 +28,7 @@ payload:
   - DOMAIN-SUFFIX,azure.com
   - DOMAIN-SUFFIX,msauth.net
   - DOMAIN-SUFFIX,msftauth.net
+  - DOMAIN-SUFFIX,msedge.net
   - DOMAIN-SUFFIX,microsoftonline.com
   - DOMAIN-SUFFIX,appcenter.ms
 # DOMAIN-KEYWORD Siemens
