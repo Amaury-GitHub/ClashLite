@@ -30,8 +30,10 @@ payload:
 # DOMAIN-KEYWORD Siemens
   - DOMAIN-KEYWORD,siemens.
   - DOMAIN-KEYWORD,.siemens
-# DOMAIN-SUFFIX Other
-  - DOMAIN-SUFFIX,sentry.io
+# DOMAIN-KEYWORD Other
+  - DOMAIN-KEYWORD,sentry.io
+  - DOMAIN-KEYWORD,cloudflare.
+  - DOMAIN-KEYWORD,.cloudflare
 # IP-CIDR WeChat
   - IP-CIDR,43.156.192.0/18,no-resolve
   - IP-CIDR,101.32.136.0/21,no-resolve
