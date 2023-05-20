@@ -3,3 +3,6 @@ payload:
   - DST-PORT,123
 # DOMAIN-SUFFIX
   - DOMAIN-SUFFIX,amaury.eu.org
+  - DOMAIN-SUFFIX,apple.com
+  - DOMAIN-SUFFIX,microsoft.com
+  - DOMAIN-SUFFIX,windows.com
