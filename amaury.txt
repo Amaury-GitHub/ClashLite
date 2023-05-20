@@ -30,5 +30,5 @@ payload:
 # DOMAIN-KEYWORD Siemens
   - DOMAIN-KEYWORD,siemens.
   - DOMAIN-KEYWORD,.siemens
-# DOMAIN-KEYWORD Other
-  - DOMAIN-KEYWORD,sentry.io
+# DOMAIN-SUFFIX Other
+  - DOMAIN-SUFFIX,sentry.io
