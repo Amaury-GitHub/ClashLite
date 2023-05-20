@@ -12,3 +12,6 @@ payload:
   - DOMAIN-SUFFIX,skype.com
   - DOMAIN-SUFFIX,office.com
   - DOMAIN-SUFFIX,sharepoint.com
+  - DOMAIN-SUFFIX,s-microsoft.com
+  - DOMAIN-SUFFIX,xboxlive.com
+  - DOMAIN-SUFFIX,xboxservices.com
