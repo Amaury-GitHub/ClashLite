@@ -35,6 +35,9 @@ payload:
 # DOMAIN-SUFFIX Other
   - DOMAIN-SUFFIX,cloudflare.com
   - DOMAIN-SUFFIX,sentry.io
+  - DOMAIN-SUFFIX,mo.fish
+  - DOMAIN-SUFFIX,0daydown.com
+  - DOMAIN-SUFFIX,printf520.com
 # IP-CIDR WeChat
   - IP-CIDR,43.154.192.0/18,no-resolve
   - IP-CIDR,43.156.192.0/18,no-resolve
