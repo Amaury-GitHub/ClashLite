@@ -8,3 +8,4 @@ payload:
   - DOMAIN-SUFFIX,windows.com
   - DOMAIN-SUFFIX,windowsupdate.com
   - DOMAIN-SUFFIX,live.com
+  - DOMAIN-SUFFIX,bing.com
