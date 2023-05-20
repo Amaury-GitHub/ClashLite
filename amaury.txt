@@ -17,6 +17,7 @@ payload:
   - DOMAIN-SUFFIX,nelreports.com
   - DOMAIN-SUFFIX,akamaized.net
   - DOMAIN-SUFFIX,azurefd.net
+  - DOMAIN-SUFFIX,gfx.ms
 # DOMAIN-KEYWORD Siemens
   - DOMAIN-KEYWORD,siemens
 # DOMAIN-SUFFIX Other
