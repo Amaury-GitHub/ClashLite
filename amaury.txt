@@ -6,6 +6,8 @@ payload:
 # DOMAIN-KEYWORD Apple
   - DOMAIN-KEYWORD,.apple
   - DOMAIN-KEYWORD,apple.
+  - DOMAIN-KEYWORD,icloud.
+  - DOMAIN-KEYWORD,.icloud
 # DOMAIN-KEYWORD Microsoft
   - DOMAIN-KEYWORD,microsoft.
   - DOMAIN-KEYWORD,.microsoft
