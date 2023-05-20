@@ -1,9 +1,12 @@
 payload:
-# DST-PORT
+# DST-PORT NTP
   - DST-PORT,123
-# DOMAIN-SUFFIX
+# DOMAIN-SUFFIX Personal
   - DOMAIN-SUFFIX,amaury.eu.org
+# DOMAIN-SUFFIX Apple
   - DOMAIN-SUFFIX,apple.com
+  - DOMAIN-SUFFIX,apple-cloudkit.com
+# DOMAIN-SUFFIX Microsoft
   - DOMAIN-SUFFIX,microsoft.com
   - DOMAIN-SUFFIX,windows.com
   - DOMAIN-SUFFIX,windowsupdate.com
@@ -15,3 +18,6 @@ payload:
   - DOMAIN-SUFFIX,s-microsoft.com
   - DOMAIN-SUFFIX,xboxlive.com
   - DOMAIN-SUFFIX,xboxservices.com
+  - DOMAIN-SUFFIX,nelreports.net
+# DOMAIN-SUFFIX Siemens
+  - DOMAIN-SUFFIX,siemens.cloud
