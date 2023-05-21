@@ -42,6 +42,7 @@ payload:
   - DOMAIN-SUFFIX,printf520.com
   - DOMAIN-SUFFIX,moyu.im
   - DOMAIN-SUFFIX,capterra.com
+  - DOMAIN-SUFFIX,darkreader.org
 # IP-CIDR WeChat
   - IP-CIDR,43.154.192.0/18,no-resolve
   - IP-CIDR,43.156.192.0/18,no-resolve
