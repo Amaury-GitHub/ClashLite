@@ -22,6 +22,7 @@ payload:
   - DOMAIN-SUFFIX,xboxservices.com
   - DOMAIN-SUFFIX,xboxlive.com
   - DOMAIN-SUFFIX,nelreports.com
+  - DOMAIN-SUFFIX,nelreports.net
   - DOMAIN-SUFFIX,akamaized.net
   - DOMAIN-SUFFIX,azurefd.net
   - DOMAIN-SUFFIX,azureedge.net
@@ -32,6 +33,7 @@ payload:
   - DOMAIN-SUFFIX,msedge.net
   - DOMAIN-SUFFIX,microsoftonline.com
   - DOMAIN-SUFFIX,appcenter.ms
+  - DOMAIN-SUFFIX,bingapis.com
 # DOMAIN-KEYWORD Siemens
   - DOMAIN-KEYWORD,siemens
 # DOMAIN-SUFFIX Other
@@ -43,6 +45,8 @@ payload:
   - DOMAIN-SUFFIX,moyu.im
   - DOMAIN-SUFFIX,capterra.com
   - DOMAIN-SUFFIX,darkreader.org
+  - DOMAIN-SUFFIX,malware-filter.pages.dev
+  - DOMAIN-SUFFIX,ublockorigin.pages.dev
 # IP-CIDR WeChat
   - IP-CIDR,43.154.192.0/18,no-resolve
   - IP-CIDR,43.156.192.0/18,no-resolve
