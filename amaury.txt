@@ -47,6 +47,7 @@ payload:
   - DOMAIN-SUFFIX,darkreader.org
   - DOMAIN-SUFFIX,malware-filter.pages.dev
   - DOMAIN-SUFFIX,ublockorigin.pages.dev
+  - DOMAIN-SUFFIX,deepl.com
 # IP-CIDR WeChat
   - IP-CIDR,43.154.192.0/18,no-resolve
   - IP-CIDR,43.156.192.0/18,no-resolve
