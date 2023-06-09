@@ -35,6 +35,10 @@ payload:
   - DOMAIN-SUFFIX,microsoftonline.com
   - DOMAIN-SUFFIX,appcenter.ms
   - DOMAIN-SUFFIX,bingapis.com
+  - DOMAIN-SUFFIX,windowsazure.com
+  - DOMAIN-SUFFIX,msocdn.com
+  - DOMAIN-SUFFIX,msauthimages.net
+  - DOMAIN-SUFFIX,aka.ms
 # DOMAIN-KEYWORD Siemens
   - DOMAIN-KEYWORD,siemens
 # DOMAIN-SUFFIX Other
