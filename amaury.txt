@@ -12,6 +12,7 @@ payload:
   - DOMAIN-SUFFIX,microsoft.net
   - DOMAIN-SUFFIX,s-microsoft.com
   - DOMAIN-SUFFIX,windows.com
+  - DOMAIN-SUFFIX,windows.net
   - DOMAIN-SUFFIX,windowsupdate.com
   - DOMAIN-SUFFIX,live.com
   - DOMAIN-SUFFIX,bing.com
