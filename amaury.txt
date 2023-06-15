@@ -58,6 +58,7 @@ payload:
   - DOMAIN-SUFFIX,fun.tv
   - DOMAIN-SUFFIX,rr.tv
   - DOMAIN-SUFFIX,synology.com
+  - DOMAIN-SUFFIX,ax1x.com
 # IP-CIDR WeChat
   - IP-CIDR,43.154.192.0/18,no-resolve
   - IP-CIDR,43.156.192.0/18,no-resolve
