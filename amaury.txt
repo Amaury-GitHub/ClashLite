@@ -39,6 +39,7 @@ payload:
   - DOMAIN-SUFFIX,msocdn.com
   - DOMAIN-SUFFIX,msauthimages.net
   - DOMAIN-SUFFIX,aka.ms
+  - DOMAIN-SUFFIX,azk8s.com
 # DOMAIN-KEYWORD Siemens
   - DOMAIN-KEYWORD,siemens
 # DOMAIN-SUFFIX Other
