@@ -53,6 +53,9 @@ payload:
   - DOMAIN-SUFFIX,pages.dev
   - DOMAIN-SUFFIX,deepl.com
   - DOMAIN-SUFFIX,purehub.app
+  - DOMAIN-SUFFIX,ysdqwz.com
+  - DOMAIN-SUFFIX,fun.tv
+  - DOMAIN-SUFFIX,rr.tv
 # IP-CIDR WeChat
   - IP-CIDR,43.154.192.0/18,no-resolve
   - IP-CIDR,43.156.192.0/18,no-resolve
