@@ -3,9 +3,8 @@ payload:
   - DST-PORT,80
 # DOMAIN-SUFFIX Personal
   - DOMAIN-SUFFIX,amaury.eu.org
-  - DOMAIN-SUFFIX,safebrowsing.urlsec.qq.com
-  - DOMAIN-SUFFIX,safebrowsing.googleapis.com  
-  - DOMAIN-SUFFIX,crashlytics.com
+  - DOMAIN-KEYWORD,safebrowsing
+  - DOMAIN-KEYWORD,crashlytics
 # DOMAIN-SUFFIX Apple
   - DOMAIN-SUFFIX,apple.com
   - DOMAIN-SUFFIX,cdn-apple.com
