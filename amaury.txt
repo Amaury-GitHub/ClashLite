@@ -3,6 +3,8 @@ payload:
   - DST-PORT,80
 # DOMAIN-SUFFIX Personal
   - DOMAIN-SUFFIX,amaury.eu.org
+# DOMAIN-SUFFIX Google
+  - DOMAIN-SUFFIX,safebrowsing.googleapis.com  
 # DOMAIN-SUFFIX Apple
   - DOMAIN-SUFFIX,apple.com
   - DOMAIN-SUFFIX,cdn-apple.com
