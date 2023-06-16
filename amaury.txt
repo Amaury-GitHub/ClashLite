@@ -70,6 +70,7 @@ payload:
   - DOMAIN-SUFFIX,g2crowd.com
   - DOMAIN-SUFFIX,osano.com
   - DOMAIN-SUFFIX,hsappstatic.net
+  - DOMAIN-SUFFIX,cusdis.com
 # IP-CIDR WeChat
   - IP-CIDR,43.154.192.0/18,no-resolve
   - IP-CIDR,43.156.192.0/18,no-resolve
