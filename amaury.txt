@@ -7,6 +7,7 @@ payload:
   - DOMAIN-SUFFIX,apple.com
   - DOMAIN-SUFFIX,cdn-apple.com
   - DOMAIN-SUFFIX,apple-dns.net
+  - IP-CIDR,17.57.144.0/22,no-resolve
 # DOMAIN-SUFFIX Microsoft
   - DOMAIN-SUFFIX,microsoft.com
   - DOMAIN-SUFFIX,microsoft.net
@@ -59,6 +60,12 @@ payload:
   - DOMAIN-SUFFIX,rr.tv
   - DOMAIN-SUFFIX,synology.com
   - DOMAIN-SUFFIX,ax1x.com
+  - DOMAIN-SUFFIX,g2.com
+  - DOMAIN-SUFFIX,getapp.com
+  - DOMAIN-SUFFIX,icrc.org
+  - DOMAIN-SUFFIX,osano.com
+  - DOMAIN-SUFFIX,g2crowd.com
+  - DOMAIN-SUFFIX,osano.com
 # IP-CIDR WeChat
   - IP-CIDR,43.154.192.0/18,no-resolve
   - IP-CIDR,43.156.192.0/18,no-resolve
