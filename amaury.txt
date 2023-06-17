@@ -58,3 +58,4 @@ payload:
   - DOMAIN-SUFFIX,osano.com
   - DOMAIN-SUFFIX,hsappstatic.net
   - DOMAIN-SUFFIX,cusdis.com
+  - DOMAIN-SUFFIX,anubis.cab
