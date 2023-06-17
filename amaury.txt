@@ -62,3 +62,4 @@ payload:
   - DOMAIN-KEYWORD,cusdis
   - DOMAIN-KEYWORD,anubis
   - DOMAIN-KEYWORD,xyffvip
+  - DOMAIN-KEYWORD,igg-games
