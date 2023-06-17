@@ -5,6 +5,8 @@ payload:
   - DOMAIN-KEYWORD,safebrowsing
   - DOMAIN-KEYWORD,crashlytics
   - DOMAIN-KEYWORD,siemens
+  - DOMAIN-KEYWORD,cloudflare
+  - DOMAIN-SUFFIX,mo.fish
 # Apple & Microsoft
   - IP-CIDR,17.57.144.0/22,no-resolve
   - DOMAIN-KEYWORD,apple
@@ -34,9 +36,7 @@ payload:
   - IP-CIDR,101.32.136.0/21,no-resolve
   - IP-CIDR,129.226.2.0/23,no-resolve
 # Other
-  - DOMAIN-SUFFIX,cloudflare.com
   - DOMAIN-SUFFIX,sentry.io
-  - DOMAIN-SUFFIX,mo.fish
   - DOMAIN-SUFFIX,0daydown.com
   - DOMAIN-SUFFIX,printf520.com
   - DOMAIN-SUFFIX,moyu.im
