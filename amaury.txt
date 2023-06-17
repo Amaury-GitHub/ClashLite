@@ -4,6 +4,7 @@ payload:
 # DOMAIN-SUFFIX Personal
   - DOMAIN-SUFFIX,amaury.eu.org
   - DOMAIN-KEYWORD,safebrowsing
+  - DOMAIN-KEYWORD,crashlytics
 # DOMAIN-SUFFIX Apple
   - DOMAIN-SUFFIX,apple.com
   - DOMAIN-SUFFIX,cdn-apple.com
