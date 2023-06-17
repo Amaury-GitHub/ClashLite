@@ -64,3 +64,4 @@ payload:
   - DOMAIN-KEYWORD,xyffvip
   - DOMAIN-KEYWORD,igg-games
   - DOMAIN-KEYWORD,listray
+  - DOMAIN-KEYWORD,crisp
