@@ -36,26 +36,26 @@ payload:
   - IP-CIDR,101.32.136.0/21,no-resolve
   - IP-CIDR,129.226.2.0/23,no-resolve
 # Other
-  - DOMAIN-SUFFIX,sentry.io
-  - DOMAIN-SUFFIX,0daydown.com
-  - DOMAIN-SUFFIX,printf520.com
-  - DOMAIN-SUFFIX,moyu.im
-  - DOMAIN-SUFFIX,capterra.com
-  - DOMAIN-SUFFIX,darkreader.org
+  - DOMAIN-KEYWORD,sentry
+  - DOMAIN-KEYWORD,0daydown
+  - DOMAIN-KEYWORD,printf520
+  - DOMAIN-KEYWORD,moyu
+  - DOMAIN-KEYWORD,capterra
+  - DOMAIN-KEYWORD,darkreader
   - DOMAIN-SUFFIX,pages.dev
-  - DOMAIN-SUFFIX,deepl.com
-  - DOMAIN-SUFFIX,purehub.app
-  - DOMAIN-SUFFIX,ysdqwz.com
+  - DOMAIN-KEYWORD,deepl
+  - DOMAIN-KEYWORD,purehub
+  - DOMAIN-KEYWORD,ysdqwz
   - DOMAIN-SUFFIX,fun.tv
   - DOMAIN-SUFFIX,rr.tv
-  - DOMAIN-SUFFIX,synology.com
-  - DOMAIN-SUFFIX,ax1x.com
+  - DOMAIN-KEYWORD,synology
+  - DOMAIN-KEYWORD,ax1x
   - DOMAIN-SUFFIX,g2.com
   - DOMAIN-SUFFIX,getapp.com
-  - DOMAIN-SUFFIX,icrc.org
-  - DOMAIN-SUFFIX,osano.com
-  - DOMAIN-SUFFIX,g2crowd.com
-  - DOMAIN-SUFFIX,osano.com
-  - DOMAIN-SUFFIX,hsappstatic.net
-  - DOMAIN-SUFFIX,cusdis.com
-  - DOMAIN-SUFFIX,anubis.cab
+  - DOMAIN-KEYWORD,icrc
+  - DOMAIN-KEYWORD,g2crowd
+  - DOMAIN-KEYWORD,osano
+  - DOMAIN-KEYWORD,hsappstatic
+  - DOMAIN-KEYWORD,cusdis
+  - DOMAIN-KEYWORD,anubis
+  - DOMAIN-KEYWORD,xyffvip
