@@ -17,7 +17,7 @@ payload:
   - DOMAIN-KEYWORD,.me.com
   - DOMAIN-KEYWORD,microsoft
   - DOMAIN-KEYWORD,windows
-  - DOMAIN-KEYWORD,live
+  - DOMAIN-KEYWORD,.live
   - DOMAIN-KEYWORD,bing
   - DOMAIN-KEYWORD,skype
   - DOMAIN-KEYWORD,office
