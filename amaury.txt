@@ -6,8 +6,11 @@ payload:
   - DOMAIN-KEYWORD,crashlytics
   - DOMAIN-KEYWORD,siemens
   - DOMAIN-KEYWORD,cloudflare
-  - DOMAIN-SUFFIX,mo.fish
+  - DOMAIN-KEYWORD,deepl
+  - DOMAIN-KEYWORD,synology
+  - DOMAIN-KEYWORD,listray
   - DOMAIN-KEYWORD,fonts
+  - DOMAIN-SUFFIX,mo.fish
 # Apple & Microsoft
   - DOMAIN-KEYWORD,apple
   - DOMAIN-KEYWORD,mzstatic
@@ -39,17 +42,14 @@ payload:
   - IP-CIDR,101.32.136.0/21,no-resolve
   - IP-CIDR,129.226.2.0/23,no-resolve
 # Other
+  - IP-CIDR,104.18.144.0/20,no-resolve
+  - IP-CIDR,104.18.0.0/20,no-resolve
   - DOMAIN-SUFFIX,sentry.io
   - DOMAIN-KEYWORD,0daydown
   - DOMAIN-KEYWORD,printf520
   - DOMAIN-SUFFIX,pages.dev
-  - DOMAIN-KEYWORD,deepl
   - DOMAIN-SUFFIX,fun.tv
   - DOMAIN-SUFFIX,rr.tv
-  - DOMAIN-KEYWORD,synology
-  - DOMAIN-KEYWORD,listray
-  - IP-CIDR,104.18.144.0/20,no-resolve
-  - IP-CIDR,104.18.0.0/20,no-resolve
   - DOMAIN-SUFFIX,simplesvg.com
   - DOMAIN-SUFFIX,hsforms.net
   - DOMAIN-SUFFIX,iconify.design
