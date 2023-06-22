@@ -39,7 +39,7 @@ payload:
   - IP-CIDR,101.32.136.0/21,no-resolve
   - IP-CIDR,129.226.2.0/23,no-resolve
 # Other
-  - DOMAIN-KEYWORD,sentry
+  - DOMAIN-SUFFIX,sentry.io
   - DOMAIN-KEYWORD,0daydown
   - DOMAIN-KEYWORD,printf520
   - DOMAIN-KEYWORD,moyu
@@ -66,6 +66,7 @@ payload:
   - DOMAIN-KEYWORD,listray
   - IP-CIDR,104.18.144.0/20,no-resolve
   - IP-CIDR,104.18.0.0/20,no-resolve
-  - DOMAIN-KEYWORD,simplesvg.com
-  - DOMAIN-KEYWORD,hsforms.net
-  - DOMAIN-KEYWORD,iconify.design
+  - DOMAIN-SUFFIX,simplesvg.com
+  - DOMAIN-SUFFIX,hsforms.net
+  - DOMAIN-SUFFIX,iconify.design
+  - DOMAIN-SUFFIX,maxcdn.com
