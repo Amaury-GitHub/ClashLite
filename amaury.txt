@@ -66,3 +66,6 @@ payload:
   - DOMAIN-KEYWORD,listray
   - IP-CIDR,104.18.144.0/20,no-resolve
   - IP-CIDR,104.18.0.0/20,no-resolve
+  - DOMAIN-KEYWORD,simplesvg.com
+  - DOMAIN-KEYWORD,hsforms.net
+  - DOMAIN-KEYWORD,iconify.design
