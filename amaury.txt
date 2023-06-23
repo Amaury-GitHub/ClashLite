@@ -9,20 +9,15 @@ payload:
   - DOMAIN-KEYWORD,deepl
   - DOMAIN-KEYWORD,synology
   - DOMAIN-KEYWORD,listray
-  - DOMAIN-KEYWORD,fonts
   - DOMAIN-SUFFIX,mo.fish
-  - DOMAIN-SUFFIX,natfrp.com
-  - DOMAIN-SUFFIX,frp-arm.top
 # Apple & Microsoft
   - DOMAIN-KEYWORD,apple
   - DOMAIN-KEYWORD,mzstatic
   - DOMAIN-KEYWORD,aaplimg
   - DOMAIN-KEYWORD,akadns
   - DOMAIN-KEYWORD,icloud
-  - DOMAIN-KEYWORD,.me.com
   - DOMAIN-KEYWORD,microsoft
   - DOMAIN-KEYWORD,windows
-  - DOMAIN-KEYWORD,.live
   - DOMAIN-KEYWORD,bing
   - DOMAIN-KEYWORD,skype
   - DOMAIN-KEYWORD,office
@@ -31,8 +26,6 @@ payload:
   - DOMAIN-KEYWORD,nelreports
   - DOMAIN-KEYWORD,akamaized
   - DOMAIN-KEYWORD,azure
-  - DOMAIN-KEYWORD,.ms
-  - DOMAIN-KEYWORD,azk8s
   - IP-CIDR,17.57.144.0/22,no-resolve
   - IP-CIDR,20.192.0.0/10,no-resolve
   - IP-CIDR,51.10.0.0/15,no-resolve
@@ -43,17 +36,11 @@ payload:
   - IP-CIDR,101.32.118.0/23,no-resolve
   - IP-CIDR,101.32.136.0/21,no-resolve
   - IP-CIDR,129.226.2.0/23,no-resolve
-# Other
+# Cloudflare
   - IP-CIDR,104.18.144.0/20,no-resolve
   - IP-CIDR,104.18.0.0/20,no-resolve
-  - DOMAIN-SUFFIX,sentry.io
-  - DOMAIN-KEYWORD,0daydown
-  - DOMAIN-KEYWORD,printf520
-  - DOMAIN-SUFFIX,pages.dev
+# Other
+  - DOMAIN-SUFFIX,0daydown.com
+  - DOMAIN-SUFFIX,printf520.com
   - DOMAIN-SUFFIX,fun.tv
   - DOMAIN-SUFFIX,rr.tv
-  - DOMAIN-SUFFIX,simplesvg.com
-  - DOMAIN-SUFFIX,hsforms.net
-  - DOMAIN-SUFFIX,iconify.design
-  - DOMAIN-SUFFIX,maxcdn.com
-  - DOMAIN-SUFFIX,crisp.chat
