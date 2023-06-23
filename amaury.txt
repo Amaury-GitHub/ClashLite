@@ -29,6 +29,7 @@ payload:
   - IP-CIDR,17.57.144.0/22,no-resolve
   - IP-CIDR,20.192.0.0/10,no-resolve
   - IP-CIDR,51.10.0.0/15,no-resolve
+  - DOMAIN-SUFFIX,appcenter.ms
 # WeChat
   - IP-CIDR,43.154.192.0/18,no-resolve
   - IP-CIDR,43.156.192.0/18,no-resolve
