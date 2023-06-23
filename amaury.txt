@@ -46,3 +46,4 @@ payload:
   - DOMAIN-SUFFIX,fun.tv
   - DOMAIN-SUFFIX,rr.tv
   - DOMAIN-SUFFIX,sentry.io
+  - DOMAIN-SUFFIX,maxcdn.com
