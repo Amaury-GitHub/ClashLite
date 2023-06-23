@@ -47,3 +47,4 @@ payload:
   - DOMAIN-SUFFIX,rr.tv
   - DOMAIN-SUFFIX,sentry.io
   - DOMAIN-SUFFIX,maxcdn.com
+  - DOMAIN-SUFFIX,crisp.chat
