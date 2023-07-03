@@ -49,3 +49,5 @@ payload:
   - DOMAIN-SUFFIX,sentry.io
   - DOMAIN-SUFFIX,maxcdn.com
   - DOMAIN-SUFFIX,crisp.chat
+  - DOMAIN-SUFFIX,techlife.app
+  - DOMAIN-SUFFIX,purehub.app
