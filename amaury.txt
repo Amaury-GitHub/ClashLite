@@ -9,8 +9,6 @@ payload:
   - DOMAIN-KEYWORD,deepl
   - DOMAIN-KEYWORD,synology
   - DOMAIN-KEYWORD,listray
-  - DOMAIN-KEYWORD,ublockorigin
-  - DOMAIN-SUFFIX,mo.fish
 # Apple & Microsoft
   - DOMAIN-KEYWORD,apple
   - DOMAIN-KEYWORD,mzstatic
