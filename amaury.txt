@@ -51,3 +51,4 @@ payload:
   - DOMAIN-SUFFIX,crisp.chat
   - DOMAIN-SUFFIX,techlife.app
   - DOMAIN-SUFFIX,purehub.app
+  - DOMAIN-SUFFIX,livechatinc.com
