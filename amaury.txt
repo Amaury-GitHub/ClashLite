@@ -11,6 +11,7 @@ payload:
   - DOMAIN-KEYWORD,listray
   - DOMAIN-KEYWORD,ublockorigin
   - DOMAIN-KEYWORD,adguard
+  - DOMAIN-KEYWORD,adtidy
 # Apple & Microsoft
   - DOMAIN-KEYWORD,apple
   - DOMAIN-KEYWORD,mzstatic
@@ -57,4 +58,3 @@ payload:
   - DOMAIN-SUFFIX,purehub.app
   - DOMAIN-SUFFIX,livechatinc.com
   - DOMAIN-SUFFIX,xtracloud.net
-  - DOMAIN-SUFFIX,adtidy.org
