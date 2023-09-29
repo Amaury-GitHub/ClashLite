@@ -31,6 +31,7 @@ payload:
   - IP-CIDR,51.10.0.0/15,no-resolve
   - DOMAIN-SUFFIX,appcenter.ms
   - DOMAIN-SUFFIX,login.live.com
+  - DOMAIN-SUFFIX,aka.ms
 # WeChat
   - IP-CIDR,43.154.192.0/18,no-resolve
   - IP-CIDR,43.156.192.0/18,no-resolve
