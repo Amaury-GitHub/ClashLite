@@ -42,6 +42,7 @@ payload:
 # Cloudflare
   - IP-CIDR,104.18.144.0/20,no-resolve
   - IP-CIDR,104.18.0.0/20,no-resolve
+  - DOMAIN-SUFFIX,unpkg.com
 # Other
   - DOMAIN-SUFFIX,0daydown.com
   - DOMAIN-SUFFIX,printf520.com
