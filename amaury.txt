@@ -9,6 +9,7 @@ payload:
   - DOMAIN-KEYWORD,deepl
   - DOMAIN-KEYWORD,synology
   - DOMAIN-KEYWORD,listray
+  - DOMAIN-KEYWORD,ublockorigin
 # Apple & Microsoft
   - DOMAIN-KEYWORD,apple
   - DOMAIN-KEYWORD,mzstatic
@@ -55,3 +56,4 @@ payload:
   - DOMAIN-SUFFIX,purehub.app
   - DOMAIN-SUFFIX,livechatinc.com
   - DOMAIN-SUFFIX,xtracloud.net
+  - DOMAIN-SUFFIX,adtidy.org
