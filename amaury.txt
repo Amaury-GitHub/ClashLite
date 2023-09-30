@@ -1,6 +1,5 @@
 payload:
 # Personal
-  - DST-PORT,80
   - DOMAIN-SUFFIX,amaury.eu.org
   - DOMAIN-KEYWORD,safebrowsing
   - DOMAIN-KEYWORD,crashlytics
