@@ -12,6 +12,7 @@ payload:
   - DOMAIN-KEYWORD,adguard
   - DOMAIN-KEYWORD,adtidy
   - DOMAIN-KEYWORD,analytics
+  - DOMAIN-KEYWORD,sentry
 # Apple & Microsoft
   - DOMAIN-KEYWORD,apple
   - DOMAIN-KEYWORD,mzstatic
