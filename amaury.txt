@@ -48,3 +48,4 @@ payload:
   - DOMAIN-SUFFIX,printf520.com
   - DOMAIN-SUFFIX,fun.tv
   - DOMAIN-SUFFIX,rr.tv
+  - DOMAIN-SUFFIX,crisp.chat
