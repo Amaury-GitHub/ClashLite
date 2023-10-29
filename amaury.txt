@@ -13,6 +13,8 @@ payload:
   - DOMAIN-KEYWORD,adtidy
   - DOMAIN-KEYWORD,analytics
   - DOMAIN-KEYWORD,sentry
+  - DOMAIN-KEYWORD,verisign
+  - DOMAIN-KEYWORD,crisp
 # Apple & Microsoft
   - DOMAIN-KEYWORD,apple
   - DOMAIN-KEYWORD,mzstatic
@@ -48,4 +50,3 @@ payload:
   - DOMAIN-SUFFIX,printf520.com
   - DOMAIN-SUFFIX,fun.tv
   - DOMAIN-SUFFIX,rr.tv
-  - DOMAIN-SUFFIX,crisp.chat
