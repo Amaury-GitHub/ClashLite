@@ -7,7 +7,7 @@ payload:
   - DOMAIN-KEYWORD,cloudflare
   - DOMAIN-KEYWORD,deepl
   - DOMAIN-KEYWORD,synology
-  - DOMAIN-KEYWORD,listray
+  - DOMAIN-KEYWORD,listary
   - DOMAIN-KEYWORD,ublockorigin
   - DOMAIN-KEYWORD,adguard
   - DOMAIN-KEYWORD,adtidy
