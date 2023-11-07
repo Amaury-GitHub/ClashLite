@@ -15,6 +15,7 @@ payload:
   - DOMAIN-KEYWORD,sentry
   - DOMAIN-KEYWORD,verisign
   - DOMAIN-KEYWORD,crisp
+  - DOMAIN-KEYWORD,purehub
 # Apple & Microsoft
   - DOMAIN-KEYWORD,apple
   - DOMAIN-KEYWORD,mzstatic
