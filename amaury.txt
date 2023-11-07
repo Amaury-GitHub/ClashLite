@@ -18,6 +18,7 @@ payload:
   - DOMAIN-KEYWORD,purehub
   - DOMAIN-KEYWORD,qualcomm
   - DOMAIN-KEYWORD,xtracloud
+# Google
   - DOMAIN-KEYWORD,googlead
   - DOMAIN-KEYWORD,pagead
 # Apple & Microsoft
