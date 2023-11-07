@@ -16,6 +16,8 @@ payload:
   - DOMAIN-KEYWORD,verisign
   - DOMAIN-KEYWORD,crisp
   - DOMAIN-KEYWORD,purehub
+  - DOMAIN-KEYWORD,qualcomm
+  - DOMAIN-KEYWORD,xtracloud
 # Apple & Microsoft
   - DOMAIN-KEYWORD,apple
   - DOMAIN-KEYWORD,mzstatic
