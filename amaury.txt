@@ -18,7 +18,9 @@ payload:
   - DOMAIN-KEYWORD,purehub
   - DOMAIN-KEYWORD,qualcomm
   - DOMAIN-KEYWORD,xtracloud
-  - DOMAIN-KEYWORD,digicert
+  - DOMAIN-KEYWORD,digicert.com
+  - DOMAIN-KEYWORD,lencr.org
+  - DOMAIN-KEYWORD,ssl.com
 # Google
   - DOMAIN-KEYWORD,googlead
   - DOMAIN-KEYWORD,pagead
@@ -43,7 +45,7 @@ payload:
   - IP-CIDR,20.192.0.0/10,no-resolve
   - IP-CIDR,51.10.0.0/15,no-resolve
   - DOMAIN-SUFFIX,appcenter.ms
-  - DOMAIN-SUFFIX,login.live.com
+  - DOMAIN-SUFFIX,live.com
   - DOMAIN-SUFFIX,aka.ms
 # WeChat
   - DOMAIN-KEYWORD,wechat
