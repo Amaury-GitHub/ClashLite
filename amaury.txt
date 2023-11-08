@@ -47,6 +47,7 @@ payload:
   - DOMAIN-KEYWORD,appcenter.ms
   - DOMAIN-KEYWORD,live.com
   - DOMAIN-KEYWORD,aka.ms
+  - DOMAIN-KEYWORD,iis.net
 # WeChat
   - DOMAIN-KEYWORD,wechat
   - DOMAIN-KEYWORD,weixin
