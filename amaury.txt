@@ -18,6 +18,7 @@ payload:
   - DOMAIN-KEYWORD,purehub
   - DOMAIN-KEYWORD,qualcomm
   - DOMAIN-KEYWORD,xtracloud
+  - DOMAIN-KEYWORD,digicert
 # Google
   - DOMAIN-KEYWORD,googlead
   - DOMAIN-KEYWORD,pagead
