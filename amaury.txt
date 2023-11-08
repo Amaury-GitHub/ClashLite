@@ -1,6 +1,6 @@
 payload:
 # Personal
-  - DOMAIN-SUFFIX,amaury.eu.org
+  - DOMAIN-KEYWORD,amaury.eu.org
   - DOMAIN-KEYWORD,safebrowsing
   - DOMAIN-KEYWORD,crashlytics
   - DOMAIN-KEYWORD,siemens
@@ -44,9 +44,9 @@ payload:
   - IP-CIDR,17.57.144.0/22,no-resolve
   - IP-CIDR,20.192.0.0/10,no-resolve
   - IP-CIDR,51.10.0.0/15,no-resolve
-  - DOMAIN-SUFFIX,appcenter.ms
-  - DOMAIN-SUFFIX,live.com
-  - DOMAIN-SUFFIX,aka.ms
+  - DOMAIN-KEYWORD,appcenter.ms
+  - DOMAIN-KEYWORD,live.com
+  - DOMAIN-KEYWORD,aka.ms
 # WeChat
   - DOMAIN-KEYWORD,wechat
   - DOMAIN-KEYWORD,weixin
@@ -57,8 +57,8 @@ payload:
   - IP-CIDR,101.32.136.0/21,no-resolve
   - IP-CIDR,129.226.2.0/23,no-resolve
 # Other
-  - DOMAIN-SUFFIX,0daydown.com
-  - DOMAIN-SUFFIX,printf520.com
-  - DOMAIN-SUFFIX,fun.tv
-  - DOMAIN-SUFFIX,rr.tv
-  - DOMAIN-SUFFIX,ysdqwz.com
+  - DOMAIN-KEYWORD,0daydown.com
+  - DOMAIN-KEYWORD,printf520.com
+  - DOMAIN-KEYWORD,fun.tv
+  - DOMAIN-KEYWORD,rr.tv
+  - DOMAIN-KEYWORD,ysdqwz.com
