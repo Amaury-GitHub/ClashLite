@@ -7,4 +7,4 @@ payload:
   - DOMAIN-KEYWORD,analytics
   - DOMAIN-KEYWORD,googlead
   - DOMAIN-KEYWORD,pagead
-  - DOMAIN-KEYWORD,apple
+  - DOMAIN-KEYWORD,push.apple
