@@ -3,7 +3,6 @@ payload:
   - DOMAIN-KEYWORD,amaury.eu.org
   - DOMAIN-KEYWORD,safebrowsing
   - DOMAIN-KEYWORD,crashlytics
-  - DOMAIN-KEYWORD,adtidy
   - DOMAIN-KEYWORD,analytics
   - DOMAIN-KEYWORD,googlead
   - DOMAIN-KEYWORD,pagead
