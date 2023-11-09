@@ -4,5 +4,4 @@ payload:
   - DOMAIN-KEYWORD,safebrowsing
   - DOMAIN-KEYWORD,crashlytics
   - DOMAIN-KEYWORD,analytics
-  - DOMAIN-KEYWORD,pagead
   - DOMAIN-KEYWORD,push.apple
