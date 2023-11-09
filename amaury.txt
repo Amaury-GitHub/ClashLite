@@ -57,6 +57,7 @@ payload:
   - IP-CIDR,101.32.118.0/23,no-resolve
   - IP-CIDR,101.32.136.0/21,no-resolve
   - IP-CIDR,129.226.2.0/23,no-resolve
+  - IP-CIDR,129.226.96.0/20,no-resolve
 # Other
   - DOMAIN-KEYWORD,0daydown.com
   - DOMAIN-KEYWORD,printf520.com
