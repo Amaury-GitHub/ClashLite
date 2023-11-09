@@ -7,3 +7,6 @@ payload:
   - DOMAIN-KEYWORD,apple.com
   - DOMAIN-KEYWORD,googlead
   - DOMAIN-KEYWORD,analytics
+  - DOMAIN-KEYWORD,cloudflare
+  - DOMAIN-KEYWORD,login.live.com
+  - DOMAIN-KEYWORD,skype.com
