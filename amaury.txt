@@ -5,3 +5,5 @@ payload:
   - DOMAIN-KEYWORD,crashlytics
   - DOMAIN-KEYWORD,analytics
   - DOMAIN-KEYWORD,apple.com
+  - DOMAIN-KEYWORD,googlead
+  - DOMAIN-KEYWORD,analytics
