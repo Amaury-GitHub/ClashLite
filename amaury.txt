@@ -11,3 +11,4 @@ payload:
   - DOMAIN-KEYWORD,login.live.com
   - DOMAIN-KEYWORD,skype
   - DOMAIN-KEYWORD,digicert
+  - DOMAIN-KEYWORD,sentry
