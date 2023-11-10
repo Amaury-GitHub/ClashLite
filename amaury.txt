@@ -13,3 +13,4 @@ payload:
   - DOMAIN-KEYWORD,digicert
   - DOMAIN-KEYWORD,sentry
   - DOMAIN-KEYWORD,microsoft
+  - DOMAIN-KEYWORD,siemens
