@@ -12,5 +12,5 @@ payload:
   - DOMAIN-KEYWORD,skype
   - DOMAIN-KEYWORD,digicert
   - DOMAIN-KEYWORD,sentry
-  - DOMAIN-KEYWORD,microsoft
+  - DOMAIN-KEYWORD,microsofttranslator
   - DOMAIN-KEYWORD,siemens
