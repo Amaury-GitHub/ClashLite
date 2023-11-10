@@ -5,7 +5,9 @@ payload:
   - DOMAIN-KEYWORD,crashlytics
   - DOMAIN-KEYWORD,analytics
   - DOMAIN-KEYWORD,apple.com
+  - DOMAIN-KEYWORD,apple-dns.net
   - DOMAIN-KEYWORD,googlead
   - DOMAIN-KEYWORD,cloudflare
   - DOMAIN-KEYWORD,login.live.com
   - DOMAIN-KEYWORD,skype.com
+  - DOMAIN-KEYWORD,digicert.com
