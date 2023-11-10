@@ -1,14 +1,15 @@
 payload:
-# Personal
-  - DOMAIN-KEYWORD,amaury.eu.org
+# DOMAIN-KEYWORD
+  - DOMAIN-SUFFIX,amaury.eu.org
+  - DOMAIN-SUFFIX,live.com
+# DOMAIN-SUFFIX
   - DOMAIN-KEYWORD,safebrowsing
   - DOMAIN-KEYWORD,crashlytics
   - DOMAIN-KEYWORD,analytics
-  - DOMAIN-KEYWORD,apple.com
-  - DOMAIN-KEYWORD,apple-dns.net
+  - DOMAIN-KEYWORD,apple
   - DOMAIN-KEYWORD,googlead
   - DOMAIN-KEYWORD,cloudflare
-  - DOMAIN-KEYWORD,login.live.com
   - DOMAIN-KEYWORD,skype
   - DOMAIN-KEYWORD,digicert
   - DOMAIN-KEYWORD,sentry
+  - DOMAIN-KEYWORD,microsoft
