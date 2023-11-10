@@ -14,3 +14,4 @@ payload:
   - DOMAIN-KEYWORD,sentry
   - DOMAIN-KEYWORD,microsofttranslator
   - DOMAIN-KEYWORD,siemens
+  - DOMAIN-KEYWORD,deepl
